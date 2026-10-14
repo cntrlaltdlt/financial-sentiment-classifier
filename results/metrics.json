@@ -1,0 +1,196 @@
+{
+  "data": "data/financial_phrasebank_75agree.csv",
+  "model": "distilbert-base-uncased",
+  "device": "mps",
+  "settings": {
+    "epochs": 3,
+    "seed": 42,
+    "max_len": 128,
+    "batch_size": 16,
+    "learning_rate": 2e-05,
+    "split": "70/15/15 stratified"
+  },
+  "cleaning": {
+    "rows_in": 3453,
+    "rows_out": 3448,
+    "blank_rows_removed": 0,
+    "conflicting_sentences_removed": 0,
+    "duplicates_removed": 5
+  },
+  "split_sizes": {
+    "train": 2413,
+    "validation": 517,
+    "test": 518
+  },
+  "class_weights": {
+    "negative": 2.735827664399093,
+    "neutral": 0.5369381397418781,
+    "positive": 1.295222758990875
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.584802832331089,
+      "overall_accuracy": 0.8762088974854932,
+      "macro_f1": 0.8613584230221162,
+      "per_class_accuracy": {
+        "negative": {
+          "accuracy": 0.8095238095238095,
+          "correct": 51,
+          "total": 63
+        },
+        "neutral": {
+          "accuracy": 0.8660436137071651,
+          "correct": 278,
+          "total": 321
+        },
+        "positive": {
+          "accuracy": 0.9323308270676691,
+          "correct": 124,
+          "total": 133
+        }
+      },
+      "confusion_matrix": [
+        [
+          51,
+          0,
+          12
+        ],
+        [
+          4,
+          278,
+          39
+        ],
+        [
+          0,
+          9,
+          124
+        ]
+      ]
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.18198413353734064,
+      "overall_accuracy": 0.9245647969052224,
+      "macro_f1": 0.9120794617880947,
+      "per_class_accuracy": {
+        "negative": {
+          "accuracy": 0.9206349206349206,
+          "correct": 58,
+          "total": 63
+        },
+        "neutral": {
+          "accuracy": 0.9314641744548287,
+          "correct": 299,
+          "total": 321
+        },
+        "positive": {
+          "accuracy": 0.9097744360902256,
+          "correct": 121,
+          "total": 133
+        }
+      },
+      "confusion_matrix": [
+        [
+          58,
+          0,
+          5
+        ],
+        [
+          4,
+          299,
+          18
+        ],
+        [
+          2,
+          10,
+          121
+        ]
+      ]
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.09743287164828932,
+      "overall_accuracy": 0.9400386847195358,
+      "macro_f1": 0.9257112867831593,
+      "per_class_accuracy": {
+        "negative": {
+          "accuracy": 0.8888888888888888,
+          "correct": 56,
+          "total": 63
+        },
+        "neutral": {
+          "accuracy": 0.9595015576323987,
+          "correct": 308,
+          "total": 321
+        },
+        "positive": {
+          "accuracy": 0.9172932330827067,
+          "correct": 122,
+          "total": 133
+        }
+      },
+      "confusion_matrix": [
+        [
+          56,
+          2,
+          5
+        ],
+        [
+          4,
+          308,
+          9
+        ],
+        [
+          0,
+          11,
+          122
+        ]
+      ]
+    }
+  ],
+  "best_epoch": 3,
+  "test": {
+    "overall_accuracy": 0.9131274131274131,
+    "macro_f1": 0.885952508740393,
+    "per_class_accuracy": {
+      "negative": {
+        "accuracy": 0.8253968253968254,
+        "correct": 52,
+        "total": 63
+      },
+      "neutral": {
+        "accuracy": 0.9472049689440993,
+        "correct": 305,
+        "total": 322
+      },
+      "positive": {
+        "accuracy": 0.8721804511278195,
+        "correct": 116,
+        "total": 133
+      }
+    },
+    "confusion_matrix": [
+      [
+        52,
+        3,
+        8
+      ],
+      [
+        0,
+        305,
+        17
+      ],
+      [
+        6,
+        11,
+        116
+      ]
+    ]
+  },
+  "majority_class_baseline": {
+    "label": "neutral",
+    "accuracy": 0.6216216216216216
+  },
+  "runtime_seconds": 308.9
+}
