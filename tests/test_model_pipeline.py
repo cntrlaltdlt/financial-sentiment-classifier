@@ -3,10 +3,10 @@ import unittest
 import numpy as np
 import torch
 
-from sentiment_analyser.model_training import create_loader, fit, set_seed
-from sentiment_analyser.model_validation import compute_metrics
-from sentiment_analyser.models import TextDataset
-from sentiment_analyser.prediction import predict_sentiment
+from financial_sentiment_classifier.model_training import create_loader, fit, set_seed
+from financial_sentiment_classifier.model_validation import compute_metrics
+from financial_sentiment_classifier.models import TextDataset
+from financial_sentiment_classifier.prediction import predict_sentiment
 from tests.helpers import StubTokeniser, tiny_model
 
 ID2LABEL = {0: "negative", 1: "neutral", 2: "positive"}

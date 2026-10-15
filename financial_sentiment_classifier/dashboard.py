@@ -29,7 +29,7 @@ VAL_SIZE = 0.2
 class SentimentApp(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("Sentiment Analyser")
+        self.title("Financial Sentiment Classifier")
         self.geometry("900x640")
         self.configure(bg="#f5f5f5")
         self.grid_columnconfigure(0, weight=1)
@@ -54,7 +54,7 @@ class SentimentApp(tk.Tk):
         main_frame.grid_columnconfigure(0, weight=1)
         main_frame.grid_rowconfigure(1, weight=1)
 
-        ttk.Label(main_frame, text="Sentiment Analyser", style="Header.TLabel").grid(
+        ttk.Label(main_frame, text="Financial Sentiment Classifier", style="Header.TLabel").grid(
             row=0, column=0, sticky="w")
         ttk.Label(main_frame, text="Train on your CSV and analyse the sentiment of new text.").grid(
             row=0, column=0, sticky="e")

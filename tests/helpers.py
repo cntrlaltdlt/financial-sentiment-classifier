@@ -3,7 +3,7 @@
 import torch
 from transformers import DistilBertConfig, DistilBertModel
 
-from sentiment_analyser.models import BertSentimentClassifier
+from financial_sentiment_classifier.models import BertSentimentClassifier
 
 
 class StubTokeniser:

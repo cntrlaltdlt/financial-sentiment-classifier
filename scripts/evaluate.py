@@ -19,12 +19,12 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import pandas as pd
 
-from sentiment_analyser.data_collection import (check_trainable, clean_data, compute_class_weights,
-                                                make_label_maps, split_data)
-from sentiment_analyser.model_training import (MODEL_NAME, create_loader, fit, get_device, set_seed,
-                                               setup_training)
-from sentiment_analyser.model_validation import print_validation_metrics, validate_model
-from sentiment_analyser.models import TextDataset
+from financial_sentiment_classifier.data_collection import (
+    check_trainable, clean_data, compute_class_weights, make_label_maps, split_data)
+from financial_sentiment_classifier.model_training import (
+    MODEL_NAME, create_loader, fit, get_device, set_seed, setup_training)
+from financial_sentiment_classifier.model_validation import print_validation_metrics, validate_model
+from financial_sentiment_classifier.models import TextDataset
 
 ROOT = Path(__file__).resolve().parents[1]
 

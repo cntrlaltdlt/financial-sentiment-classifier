@@ -1,4 +1,4 @@
-"""Sentiment Analyser: fine-tunes DistilBERT on a labelled CSV and predicts sentiment.
+"""Financial Sentiment Classifier: fine-tunes DistilBERT on a labelled CSV and predicts sentiment.
 
 Components:
     1. data_collection  - load, clean and split the data

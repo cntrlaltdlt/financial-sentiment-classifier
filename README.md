@@ -1,4 +1,4 @@
-# Sentiment Analyser: fine-tuning DistilBERT
+# Financial Sentiment Classifier: fine-tuning DistilBERT
 
 A Python desktop app that fine-tunes a **DistilBERT** transformer on any labelled CSV and classifies new text as negative, neutral or positive, with a probability chart. The model is evaluated on an expert-labelled benchmark with a held-out test set.
 
@@ -55,12 +55,12 @@ The first run downloads DistilBERT (about 260 MB). The app trains on any CSV wit
 ## Repository layout
 
 ```
-sentiment_analyser/   the five components (data collection, training, validation, prediction, dashboard)
-scripts/              prepare_data.py (builds the dataset CSV), evaluate.py (train + test report)
-data/                 Financial PhraseBank CSV and its licence notes
-results/              metrics.json and the confusion matrix from the run above
-tests/                unit tests using a tiny model, so they run without a GPU or downloads
-main.py               launches the app
+financial_sentiment_classifier/   the five components (data collection, training, validation, prediction, dashboard)
+scripts/                          prepare_data.py (builds the dataset CSV), evaluate.py (train + test report)
+data/                             Financial PhraseBank CSV and its licence notes
+results/                          metrics.json and the confusion matrix from the run above
+tests/                            unit tests using a tiny model, so they run without a GPU or downloads
+main.py                           launches the app
 ```
 
 ## Limitations

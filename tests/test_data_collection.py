@@ -4,8 +4,8 @@ from pathlib import Path
 
 import pandas as pd
 
-from sentiment_analyser.data_collection import (check_trainable, clean_data, compute_class_weights,
-                                                load_csv_data, make_label_maps, split_data)
+from financial_sentiment_classifier.data_collection import (
+    check_trainable, clean_data, compute_class_weights, load_csv_data, make_label_maps, split_data)
 
 
 def balanced_frame(per_class=20):
